@@ -1,0 +1,7 @@
+# AgGen — Plant & Soil Probiotics
+# https://flynnvin10.github.io/AgGen/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://flynnvin10.github.io/AgGen/sitemap.xml

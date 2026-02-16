@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — AgGen</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#2C4A1E">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Top Banner -->
+  <div class="top-banner" role="banner">
+    <span>🌱 A Resonate Life Labs Product — Advancing Agricultural Biotechnology</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container site-header__inner">
+      <a class="brand" href="./" aria-label="AgGen home">
+        <div class="brand__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" fill="none" stroke="#fff" stroke-width="1.5"/>
+            <path d="M12 6c-2 3-3 5-3 7a3 3 0 006 0c0-2-1-4-3-7z" fill="#F2CF8F" stroke="#fff" stroke-width="1"/>
+            <path d="M12 2v4M8 4.5l2 3M16 4.5l-2 3" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand__text">Ag<span>Gen</span></div>
+      </a>
+
+      <nav class="nav" style="display: flex;" aria-label="Primary">
+        <a class="nav__link" href="./">Home</a>
+        <a class="nav__link" href="./products.html">Products</a>
+        <a class="nav__link" href="./#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <div class="error-page">
+      <div>
+        <p class="error-page__code">404</p>
+        <h1 class="error-page__title">Page not found</h1>
+        <p class="error-page__text">The page you're looking for doesn't exist or has been moved. Let's get you back to fertile ground.</p>
+        <a class="btn btn--primary" href="./">Return Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© <span id="year"></span> AgGen — A Resonate Life Labs Product. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.body.classList.add('is-loaded');
+    var y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
