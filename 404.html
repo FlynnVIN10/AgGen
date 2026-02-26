@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found — AgGen</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to AgGen — plant and soil probiotics by Resonate Life Labs.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#2C4A1E">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Top Banner -->
-  <div class="top-banner" role="banner">
+  <div class="top-banner" role="banner" aria-label="Company notice">
     <span>🌱 A Resonate Life Labs Product — Advancing Agricultural Biotechnology</span>
   </div>
 
@@ -30,11 +32,23 @@
         <div class="brand__text">Ag<span>Gen</span></div>
       </a>
 
-      <nav class="nav" style="display: flex;" aria-label="Primary">
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary" data-nav>
         <a class="nav__link" href="./">Home</a>
+        <a class="nav__link" href="./#about">About</a>
+        <a class="nav__link" href="./#science">Science</a>
         <a class="nav__link" href="./products.html">Products</a>
         <a class="nav__link" href="./#contact">Contact</a>
       </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--primary btn--shop" href="./products.html">Shop Now</a>
+      </div>
     </div>
   </header>
 
@@ -44,23 +58,53 @@
         <p class="error-page__code">404</p>
         <h1 class="error-page__title">Page not found</h1>
         <p class="error-page__text">The page you're looking for doesn't exist or has been moved. Let's get you back to fertile ground.</p>
-        <a class="btn btn--primary" href="./">Return Home</a>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a class="btn btn--primary" href="./">Return Home</a>
+          <a class="btn btn--secondary" href="./products.html">View Products</a>
+        </div>
       </div>
     </div>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <div class="footer-brand__name">Ag<span>Gen</span></div>
+          <p class="footer-brand__text">Plant &amp; soil probiotics that maximize genetic growth potential. A Resonate Life Labs product.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-links__title">Product</div>
+          <ul>
+            <li><a href="./products.html">All Products</a></li>
+            <li><a href="./products.html#soil-restore">Soil Restore</a></li>
+            <li><a href="./products.html#growth-max">Growth Max</a></li>
+            <li><a href="./products.html#complete-system">Complete System</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-links__title">Company</div>
+          <ul>
+            <li><a href="./#about">About AgGen</a></li>
+            <li><a href="./#science">Science</a></li>
+            <li><a href="./#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="site-footer__bottom">
         <p class="site-footer__copyright">© <span id="year"></span> AgGen — A Resonate Life Labs Product. All rights reserved.</p>
+        <div class="site-footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.body.classList.add('is-loaded');
-    var y = document.getElementById('year');
-    if (y) y.textContent = new Date().getFullYear();
-  </script>
+  <script src="./js/main.js" defer></script>
 </body>
 </html>
